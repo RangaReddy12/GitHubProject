@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CrossBrowserTest]">
+  <parameter name="Browser" value="firefox"/>
+  <test name="chromeTest(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="jan31.CrossBrowerTesting">
+        <methods>
+          <include name="verylogin" invocation-numbers="1 2 3"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- jan31.CrossBrowerTesting -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+</suite> <!-- Failed suite [CrossBrowserTest] -->
